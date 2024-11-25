@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game Portfolio - Moh. Rifqi S. Lamadang</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="portfolio-header">
+        <div class="profile">
+            <h1>Moh. Rifqi S. Lamadang</h1>
+            <p class="title">Game Developer & Web Developer</p>
+            <div class="social-links">
+                <a href="https://github.com/rifqilamadang" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/rifqilamadang" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:rifqilamadang@gmail.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <header class="game-header">
+            <h2>Memory Card Game</h2>
+            <p class="game-description">Test your memory by matching pairs of cards. Try to complete the game with minimal moves!</p>
+            <div class="stats">
+                <div class="moves">
+                    <span>Moves:</span>
+                    <span id="moves-count">0</span>
+                </div>
+                <div class="timer">
+                    <span>Time:</span>
+                    <span id="time">00:00</span>
+                </div>
+            </div>
+            <button id="stop" class="hide">Stop Game</button>
+        </header>
+        <div class="game-container"></div>
+        <div class="controls">
+            <button id="start">Start Game</button>
+            <button id="restart">Restart Game</button>
+        </div>
+    </div>
+
+    <div class="result hide">
+        <h2>Game Over!</h2>
+        <h3 class="win-msg"></h3>
+        <p>Moves: <span id="result-moves"></span></p>
+        <p>Time: <span id="result-time"></span></p>
+        <button id="new-game">New Game</button>
+    </div>
+
+    <footer class="portfolio-footer">
+        <p> 2024 Moh. Rifqi S. Lamadang. All rights reserved.</p>
+        <p class="portfolio-description">This memory game is part of my portfolio showcasing interactive web development skills using HTML5, CSS3, and JavaScript.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
